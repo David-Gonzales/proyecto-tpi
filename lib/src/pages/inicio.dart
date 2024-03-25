@@ -1,3 +1,4 @@
+import 'package:app_tpi/src/pages/especie.dart';
 import 'package:app_tpi/src/pages/evaluacion.dart';
 import 'package:app_tpi/src/pages/home.dart';
 import 'package:app_tpi/src/pages/login.dart';
@@ -16,7 +17,7 @@ class _InicioState extends State<Inicio> {
     int _indexSeleccionado = 0;
 
     final List<Widget> _widgetOptions = <Widget>[
-      const Text("CONSTRUCCIÓN ESPECIE"),
+      const Text("            Familia                   Género                Especie"),
       const Evaluacion(),
       const Home()
     ];

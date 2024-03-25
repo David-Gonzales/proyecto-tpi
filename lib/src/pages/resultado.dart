@@ -33,7 +33,7 @@ class Resultado extends StatelessWidget {
                 ),
                 const SizedBox(height: 10,),
                 for (var item in resultadoEvaluacion!.resultadoEvaluacion)
-                  if(item.animal != "Negativo") 
+                  if(item.animal != "Negativo" && item.probabilidad > 90) 
                     Column(
                       children: [Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
